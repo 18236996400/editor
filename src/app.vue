@@ -74,14 +74,14 @@ const options = $ref({
     avatar: 'https://tdesign.gtimg.com/site/avatar.jpg',
   },
   users: [
-    { id: 'umodoc', label: 'Umo Team' },
+    /*{ id: 'umodoc', label: 'Umo Team' },
     { id: 'Cassielxd', label: 'Cassielxd' },
     { id: 'Goldziher', label: "Na'aman Hirschfeld" },
     { id: 'SerRashin', label: 'SerRashin' },
     { id: 'ChenErik', label: 'ChenErik' },
     { id: 'china-wangxu', label: 'china-wangxu' },
     { id: 'Sherman Xu', label: 'xuzhenjun130' },
-    { id: 'testuser', label: '测试用户' },
+    { id: 'testuser', label: '测试用户' },*/
   ],
   // https://dev.umodoc.com/cn/docs/options/extensions#disableextensions
   disableExtensions: ['file'],

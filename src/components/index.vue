@@ -1141,6 +1141,10 @@ const redoHistory = () => {
   })
 }
 
+const openPrint = () => {
+  printing.value = true;
+}
+
 // Hotkeys Setup
 watch(
   () => editor.value,
@@ -1257,6 +1261,7 @@ defineExpose({
   useMessage(type: string, pramas: MessageOptions) {
     return useMessage(type, { attach: container, ...pramas })
   },
+  openPrint,
 })
 </script>
 

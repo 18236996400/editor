@@ -30,7 +30,7 @@
           <icon name="spellcheck" color="red" />
         </t-button>
       </tooltip>
-      <tooltip :content="t('shortcut.title')">
+<!--      <tooltip :content="t('shortcut.title')">
         <t-button
           class="umo-status-bar-button"
           variant="text"
@@ -39,7 +39,7 @@
         >
           <icon name="shortcut" />
         </t-button>
-      </tooltip>
+      </tooltip>-->
       <tooltip :content="t('resetAll.title')">
         <t-button
           class="umo-status-bar-button"
@@ -51,7 +51,7 @@
         </t-button>
       </tooltip>
       <!-- 请遵循开源协议，勿删除或隐藏版权信息！ -->
-      <tooltip :content="t('about.title')">
+<!--      <tooltip :content="t('about.title')">
         <t-button
           class="umo-status-bar-button"
           variant="text"
@@ -60,7 +60,7 @@
         >
           <icon name="about" />
         </t-button>
-      </tooltip>
+      </tooltip>-->
       <div class="umo-status-bar-split"></div>
       <t-dropdown
         :attach="container"
@@ -151,7 +151,7 @@
       </t-popup>
     </div>
     <div class="umo-status-bar-right">
-      <tooltip
+<!--      <tooltip
         :content="
           page.preview?.enabled ? t('preview.disable') : t('preview.title')
         "
@@ -165,7 +165,7 @@
         >
           <icon name="preview" />
         </t-button>
-      </tooltip>
+      </tooltip>-->
       <tooltip
         :content="`${fullscreen?.isFullscreen ? t('fullscreen.disable') : t('fullscreen.title')} (${getShortcut('Ctrl+F11')})`"
       >
