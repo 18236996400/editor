@@ -1145,6 +1145,19 @@ const openPrint = () => {
   printing.value = true;
 }
 
+const insertImage = (file,fileDim) => {
+  editor.value
+      ?.chain()
+      .focus()
+      .insertFile({
+        file,
+        uploadFileMap:uploadFileMap.value,
+        autoType:true,
+        fileDim,
+      })
+      .run()
+}
+
 // Hotkeys Setup
 watch(
   () => editor.value,
@@ -1262,6 +1275,7 @@ defineExpose({
     return useMessage(type, { attach: container, ...pramas })
   },
   openPrint,
+  insertImage,
 })
 </script>
 
