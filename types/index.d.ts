@@ -148,7 +148,7 @@ export interface AssistantOptions {
   enabled?: boolean
   maxlength?: number
   commands?: CommandItem[]
-  onMessage?: AsyncFunction
+  onMessage?: Function
 }
 
 export interface EchartsOptions {

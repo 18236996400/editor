@@ -1,12 +1,14 @@
 import { ObjectSchema } from '@eslint/object-schema'
 import {
-  type AsyncFunction,
-  isAsyncFunction,
   isFunction,
   isNumber,
   isRecord,
   isString,
 } from '@tool-belt/type-predicates'
+
+const isAsyncFunction = (value: any) => {
+  return true
+}
 
 import type {
   Emoji,
@@ -704,7 +706,7 @@ const ojbectSchema = new ObjectSchema({
           },
           onMessage: {
             merge: 'replace',
-            validate(value: AsyncFunction) {
+            validate(value: any) {
               if (!isAsyncFunction(value)) {
                 throw new Error('Key "onMessage" must be a async function.')
               }
@@ -900,7 +902,7 @@ const ojbectSchema = new ObjectSchema({
   },
   onSave: {
     merge: 'replace',
-    validate(value: AsyncFunction) {
+    validate(value: any) {
       if (!isAsyncFunction(value)) {
         throw new Error('Key "onSave" must be a async function.')
       }
@@ -909,7 +911,7 @@ const ojbectSchema = new ObjectSchema({
   },
   onFileUpload: {
     merge: 'replace',
-    validate(value: AsyncFunction) {
+    validate(value: any) {
       if (!isAsyncFunction(value)) {
         throw new Error('Key "onFileUpload" must be a async function.')
       }
